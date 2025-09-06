@@ -57,6 +57,8 @@ a {
 
 .aside {
   margin-top: 360px;
+  width: 100%;
+  position: fixed;
 }
 
 .aside__inner {
@@ -66,7 +68,6 @@ a {
 }
 
 .social {
-  width: 100%;
   display: flex;
   row-gap: 24px;
   flex-direction: column;
@@ -86,6 +87,11 @@ a {
 
 .social__link:hover {
   color: var(--color-accent);
+}
+
+.social,
+.slider {
+  position: relative;
 }
 
 .slider__list {
