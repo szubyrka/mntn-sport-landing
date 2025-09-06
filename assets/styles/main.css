@@ -187,8 +187,20 @@ a {
   opacity: 0.1;
 }
 
-.block__tagline--first::after {
+.block__tagline--second::after {
   content: '02';
+  font-size: 240px;
+  font-weight: 700;
+  position: absolute;
+  top: -150px;
+  left: -150px;
+  z-index: -1;
+  color: var(--color-white);
+  opacity: 0.1;
+}
+
+.block__tagline--third::after {
+  content: '03';
   font-size: 240px;
   font-weight: 700;
   position: absolute;
