@@ -50,3 +50,30 @@ a {
 .account:hover {
   color: var(--color-accent);
 }
+
+.social {
+  margin-top: 360px;
+}
+
+.social__inner {
+  width: 100%;
+  display: flex;
+  row-gap: 24px;
+  flex-direction: column;
+}
+
+.social__title {
+  font-family: var(--font-family);
+  font-weight: 700;
+  font-size: 18px;
+  color: var(--color-white);
+  writing-mode: vertical-rl;
+}
+
+.social__link {
+  color: var(--color-white);
+}
+
+.social__link:hover {
+  color: var(--color-accent);
+}
