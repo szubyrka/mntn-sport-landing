@@ -2,6 +2,8 @@
   --color-white: #fff;
   --color-accent: #FBD784;
 
+  --bg-color: #0B1D26;
+
   --font-family: 'Gilroy', sans-serif;
   --second-family: 'Chronicle Display', serif;
 
@@ -10,7 +12,7 @@
 }
 
 body {
-  background-color: #333;
+  background-color: var(--bg-color);
 }
 
 a {
@@ -130,15 +132,18 @@ a {
   max-width: calc(1462px + 10px * 2);
   padding-inline: 10px;
   margin-inline: auto;
+  display: flex;
+  row-gap: 200px;
+  flex-direction: column;
 }
 
-.block1 {
+.block {
   display: flex;
   align-items: center;
   column-gap: 114px;
 }
 
-.block1__content {
+.block__content {
   max-width: 632px;
   display: flex;
   row-gap: 27px;
@@ -148,7 +153,7 @@ a {
   padding-bottom: 140px;
 }
 
-.block1__tagline {
+.block__tagline {
   font-family: var(--font-family);
   font-weight: 800;
   font-size: 18px;
@@ -157,9 +162,12 @@ a {
   align-items: center;
   column-gap: 24px;
   flex-direction: row;
+  position: relative;
+  text-transform: uppercase;
+  letter-spacing: 6px;
 }
 
-.block1__tagline::before {
+.block__tagline::before {
   content: '';
   display: inline-block;
   width: 72px;
@@ -167,7 +175,31 @@ a {
   background-color: var(--color-accent);
 }
 
-.block1__title {
+.block__tagline--first::after {
+  content: '01';
+  font-size: 240px;
+  font-weight: 700;
+  position: absolute;
+  top: -150px;
+  left: -150px;
+  z-index: -1;
+  color: var(--color-white);
+  opacity: 0.1;
+}
+
+.block__tagline--first::after {
+  content: '02';
+  font-size: 240px;
+  font-weight: 700;
+  position: absolute;
+  top: -150px;
+  left: -150px;
+  z-index: -1;
+  color: var(--color-white);
+  opacity: 0.1;
+}
+
+.block__title {
   width: 555px;
   font-family: var(--second-family);
   font-weight: 600;
@@ -176,31 +208,31 @@ a {
   color: var(--color-white);
 }
 
-.block1__desc {
+.block__desc {
   font-family: var(--font-family);
   font-weight: 700;
   font-size: 18px;
   color: var(--color-white);
 }
 
-.block1__link {
+.block__link {
   font-family: var(--font-family);
   font-weight: 700;
   font-size: 18px;
   color: var(--color-accent);
 }
 
-.block1__link:hover {
+.block__link:hover {
   color: var(--color-white);
 }
 
-.block1__link::after {
+.block__link::after {
   content: url('../icons/arrow.svg');
   margin-left: 16px;
   margin-top: 2px;
 }
 
-.block1__img {
+.block__img {
   max-width: 566px;
   height: 720px;
 }
