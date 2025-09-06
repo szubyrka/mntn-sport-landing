@@ -23,8 +23,8 @@
 }
 
 @font-face {
-  font-family: 'ChronicleDisplay';
-  src: url('../fonts/ChronicleDisplay/ChronicleDisplay-Semibold.otf') format('otf');
+  font-family: 'Chronicle Display';
+  src: url('../fonts/ChronicleDisplay/ChronicleDisplay-Semi.woff') format('woff');
   font-weight: 600;
   font-style: normal;
   font-display: swap;
